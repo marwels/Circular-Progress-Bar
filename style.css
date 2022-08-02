@@ -11,16 +11,31 @@ body {
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    display:flex;
+    /* display:flex;
     align-items: center;
-    justify-content: center;
-
+    justify-content: center; */
+    
 }
 
-.outer {
-    height: 370px;
-    width: 370px;
-    border-radius: 50%;
-    border: 8px solid black;
-    z-index: 1;
+svg {
+    width: 400px;
+    height: 400px;
+}
+
+.circleOuter {
+    stroke-width:8;
+    stroke:rgb(0,0,0);
+    fill:none;   
+}
+
+.circleMiddle {
+    stroke-width:8;
+    stroke:rgb(0,0,0);
+    fill:none;   
+}
+
+.circleInner {
+    stroke-width:8;
+    stroke: white;
+    fill:none;   
 }
