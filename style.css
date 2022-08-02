@@ -25,17 +25,25 @@ svg {
 .circleOuter {
     stroke-width:8;
     stroke:rgb(0,0,0);
-    fill:none;   
+    fill:none;  
+    stroke-linecap:square; 
+    --radius: 190;
+    --value: 0.8;
+    stroke-dasharray: calc(2 * 22 / 7 * var(--radius) * var(--value)), calc(2 * 22 / 7 * var(--radius));
+    /* https://www.divami.com/blog/usage-svg-stroke-dasharray/ */
+    stroke-dashoffset: 0;
 }
 
 .circleMiddle {
     stroke-width:8;
     stroke:rgb(0,0,0);
     fill:none;   
+    stroke-linecap:square; 
 }
 
 .circleInner {
     stroke-width:8;
     stroke: white;
     fill:none;   
+    stroke-linecap:square; 
 }
