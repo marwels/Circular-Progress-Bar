@@ -20,6 +20,9 @@ body {
 svg {
     width: 400px;
     height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .circleOuter {
@@ -29,9 +32,25 @@ svg {
     stroke-linecap:square; 
     --radius: 190;
     --value: 0.8;
-    stroke-dasharray: calc(2 * 22 / 7 * var(--radius) * var(--value)), calc(2 * 22 / 7 * var(--radius));
+    --pi: 22/7;
+    /* stroke-dasharray: calc(var(--value)*2*var(--pi)*var(--radius)), calc((1- var(--value))*2*var(--pi)*var(--radius)); */
+    stroke-dasharray: calc(2 * var(--pi) * var(--radius) * var(--value)), calc(2 * var(--pi) * var(--radius));
     /* https://www.divami.com/blog/usage-svg-stroke-dasharray/ */
-    stroke-dashoffset: 0;
+    transform:rotate(125deg);
+    transform-origin: center center;
+}
+
+.circleOuter_red {
+     stroke-width:8;
+    stroke:darkred;
+    fill:none;  
+    stroke-linecap:square; 
+    --radius: 190;
+    --value: 0.28;
+    --pi: 22/7;
+    stroke-dasharray: calc(2 * var(--pi) * var(--radius) * var(--value)), calc(2 * var(--pi) * var(--radius));
+    transform:rotate(313deg);
+    transform-origin: center center;
 }
 
 .circleMiddle {
@@ -39,6 +58,14 @@ svg {
     stroke:rgb(0,0,0);
     fill:none;   
     stroke-linecap:square; 
+    --radius: 130;
+    --value: 0.8;
+    --pi: 22/7;
+    /* stroke-dasharray: calc(var(--value)*2*var(--pi)*var(--radius)), calc((1- var(--value))*2*var(--pi)*var(--radius)); */
+    stroke-dasharray: calc(2 * var(--pi) * var(--radius) * var(--value)), calc(2 * var(--pi) * var(--radius));
+    /* https://www.divami.com/blog/usage-svg-stroke-dasharray/ */
+    transform:rotate(125deg);
+    transform-origin: center center;
 }
 
 .circleInner {
@@ -46,4 +73,12 @@ svg {
     stroke: white;
     fill:none;   
     stroke-linecap:square; 
+    --radius: 60;
+    --value: 0.8;
+    --pi: 22/7;
+    /* stroke-dasharray: calc(var(--value)*2*var(--pi)*var(--radius)), calc((1- var(--value))*2*var(--pi)*var(--radius)); */
+    stroke-dasharray: calc(2 * var(--pi) * var(--radius) * var(--value)), calc(2 * var(--pi) * var(--radius));
+    /* https://www.divami.com/blog/usage-svg-stroke-dasharray/ */
+    transform:rotate(125deg);
+    transform-origin: center center;
 }
