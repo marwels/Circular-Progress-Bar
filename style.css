@@ -147,3 +147,16 @@ top: 614px;
 left:728px;
 }
 
+.speedContainer {
+    margin-top: -147px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.speed {
+    font-size: 80px;
+    font-weight: 500;
+
+}
