@@ -3,6 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .container {
@@ -81,4 +82,7 @@ svg {
     /* https://www.divami.com/blog/usage-svg-stroke-dasharray/ */
     transform:rotate(125deg);
     transform-origin: center center;
+}
+.n1 {
+
 }
