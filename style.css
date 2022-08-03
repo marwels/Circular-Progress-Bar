@@ -85,9 +85,65 @@ svg {
 }
 
 .n {
-    font-size: 50px;
+    font-size: 36px;
 }
-.n1 {
-/* position:absolute; */
+.n0 {
+position:absolute;
+top: 614px;
+left: 529px;
+}
 
+.n1 {
+    position:absolute;
+top: 554px;
+left: 479px;
 }
+
+.n2 {
+    position:absolute;
+top: 477px;
+left:467px;
+}
+
+.n3 {
+    position:absolute;
+top: 392px;
+left:496px;
+}
+
+.n4 {
+position:absolute;
+top: 326px;
+left:573px;
+}
+
+.n5 {
+position:absolute;
+top: 326px;
+left:700px;
+}
+
+.n6 {
+    position:absolute;
+top: 392px;
+left: 779px;
+}
+
+.n7 {
+    position:absolute;
+top: 477px;
+left:805px;
+}
+
+.n8 {
+    position:absolute;
+top: 554px;
+left: 789px;
+}
+
+.n9 {
+position:absolute;
+top: 614px;
+left:728px;
+}
+
