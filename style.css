@@ -3,13 +3,13 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Play', sans-serif;
+    position: relative;
 }
 
 .container {
     width: 400px;
     height: 400px;
-    position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     /* display:flex;
@@ -83,6 +83,11 @@ svg {
     transform:rotate(125deg);
     transform-origin: center center;
 }
+
+.n {
+    font-size: 50px;
+}
 .n1 {
+/* position:absolute; */
 
 }
